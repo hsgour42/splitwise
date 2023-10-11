@@ -10,7 +10,7 @@ import java.util.List;
 
 @Getter
 @Setter
-@Entity
+@Entity(name = "groups")
 public class Group extends BaseModel{
     private String name;
     private String descriptions;
