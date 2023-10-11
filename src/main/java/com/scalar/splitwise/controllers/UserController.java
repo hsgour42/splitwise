@@ -30,7 +30,7 @@ public class UserController {
         }catch (UserAlreadyExistsException e){
             response.setStatus("FAILURE");
             response.setMessage(e.getMessage());
-        };
+        }
         return response;
     }
 }

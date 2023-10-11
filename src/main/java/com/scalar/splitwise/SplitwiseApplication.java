@@ -1,8 +1,7 @@
 package com.scalar.splitwise;
 
-import com.scalar.splitwise.commands.Command;
+
 import com.scalar.splitwise.commands.CommandRegistry;
-import com.scalar.splitwise.controllers.UserController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
