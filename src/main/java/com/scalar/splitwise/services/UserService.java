@@ -4,6 +4,7 @@ import com.scalar.splitwise.exceptions.UserAlreadyExistsException;
 import com.scalar.splitwise.models.User;
 import com.scalar.splitwise.models.UserStatus;
 import com.scalar.splitwise.repositories.UserRepository;
+import com.scalar.splitwise.strategies.settleupstrategy.TwoSetsSettleUpStrategy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +13,7 @@ import java.util.Optional;
 @Service
 public class UserService {
     private UserRepository userRepository;
+    private TwoSetsSettleUpStrategy twoSetsSettleUpStrategy;
     @Autowired
     public UserService(UserRepository userRepository){
         this.userRepository = userRepository;
